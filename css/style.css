@@ -1,0 +1,293 @@
+/* CSS Document */
+
+@charset "utf-8" ;
+
+@import url('reset.css');
+
+body{
+color:#333;
+font-family: 'PT Sans Narrow',Calibri,'Myriad Pro',Tahoma,Arial;
+line-height:25px;
+overflow: auto;
+min-width:100%;
+height:100%;
+background-color:#fff;
+}
+
+@font-face {  
+  font-family: "FACEBOLF";
+  src: local("FACEBOLF"), url(facebolf.ttf) format("truetype"); /* non-IE */  
+}  
+.header{
+}
+
+.header table{
+	width:100%;
+	margin-top:-19px;
+}
+
+.header table tr td{
+	border:1px solid #ddd;
+	height:3px;
+	border:none;
+	background-color:#111;
+}
+
+.header table .purple{
+		background:#8e44ad;
+}
+
+.header table .green{
+		background:#27ae60;
+}
+
+.header .logo{
+	float:left;
+	margin-left:20px;
+	display:inline-block;
+	white-space:normal;
+	padding:6px;
+	vertical-align:middle;
+	margin-top:-4px;
+}
+
+.header .logo img{
+	width:80px;
+}
+
+.header .logo span{
+	display:inline-block;
+	font-size:40px;
+	font-weight:bold;
+	color:#8e44ad;
+	margin-left:6px;
+	margin-top:16px;
+	font-family:FACEBOLF;
+	letter-spacing:1px;
+	text-transform:capitalize !important;
+	text-shadow:0 1px 0 #333;
+	clear:right;
+}
+
+.header .logo span label{
+display:inline-block;	
+color:#27ae60;
+font-family: 'PT Sans Narrow',Calibri,'Myriad Pro',Tahoma,Arial;
+font-size:16px;
+text-shadow:none;
+margin-top:8px;
+font-weight:normal;
+text-align:right;
+margin-left:20px;
+}
+
+.header .nav{
+	float:right;
+	margin-right:25px;
+	margin-top:10px;
+}
+
+.header .nav li{
+	display:inline;
+}
+
+.header .nav li a{
+	display:inline-block;
+	padding:10px 20px;
+	text-transform:capitalize;
+	color:#8e44ad;
+	font-weight:bold;
+	font-size:20px;
+	border-bottom:3px solid #fff;
+	text-align:center;
+	margin-left:5px;
+	
+	transition-property: border,color,transform;
+    transition-duration: 0.3s ;
+    transition-timing-function: ease-out, linear;
+}
+
+.header .nav li a:hover{
+	color:#2ecc71;
+border-bottom:3px solid #2ecc71;
+}
+
+.header .nav li a.current{
+	color:#111;
+border-bottom:3px solid #111;
+}
+
+.middle-top{
+	background-color:#000;
+}
+
+.middle-top .slide{
+	float:left;
+	width:50%;
+	text-align:center;
+	overflow:hidden;
+}
+
+.middle-top .slide > div{
+	position:absolute;
+	text-align:center;
+	width:50.6%;
+}
+
+.middle-top .slide img{
+width:100%;
+max-height:330px;
+}
+
+.middle-top .about{
+	display:inline-block;
+	float:right;
+	border-left:2px solid #5B5B5B;
+	min-height:330px;
+	width:50%;
+	background-image:url(../img/about2.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+.middle-top .about .holder{
+	padding:20px;
+	background-color:rgba(0,0,0,.4);
+		-webkit-transition: background 250ms ease-out;
+	-moz-transition: background 250ms ease-out;
+	-o-transition: background 250ms ease-out;
+	min-height:290px;
+}
+
+.middle-top .about .holder:hover{
+	background-color:rgba(0,0,0,.5);
+}
+
+.middle-top .about h2{
+	color:#fff;
+	font-size:25px;
+	margin-bottom:10px;
+	margin-top:5px;
+		font-family:Tahoma, Geneva, sans-serif;
+		text-shadow:0 1px 0 #111;
+}
+
+.middle-top .about p{
+	color:#ffffff;
+	font-size:19px;
+	text-shadow:0 1px 0 #111;
+	font-weight:normal;
+	line-height:30px;
+}
+
+.middle-top .about a{
+	text-decoration:underline;
+	color:#8AB9FF;
+		transition-property: border,color,transform;
+    transition-duration: 0.3s ;
+    transition-timing-function: ease-out, linear;
+}
+
+.middle-top .about a:hover{
+	color:#0064F9;
+}
+
+.middle-bottom{
+	background-color:#E7EBBE;
+	text-align:center;
+}
+
+.middle-bottom h1{
+	padding:8px;
+	display:block;
+	text-align:center;
+	font-size:22px;
+	color:#333333;
+	background-color:#27ae60;
+	color:#fff;
+    text-transform:capitalize;
+	border:none;
+}
+
+.middle-bottom h1 span{
+	color:#ecf0f1;
+	font-size:18px;
+	text-transform:lowercase;
+	margin-left:4px;
+}
+
+.middle-bottom table{
+	width:90%;
+	margin:20px auto;
+	text-align:left;
+}
+
+.middle-bottom table tr td {
+	padding:10px;
+	background-color:rgba(255,255,255,.7);
+	padding-right:20px;
+	color:#000;
+	border-right:5px dotted #fff;
+	width:200px;
+}
+
+.middle-bottom table tr td:last-child{
+	border-right:none;
+}
+
+.middle-bottom table tr td label{
+	display:block;
+	font-weight:bold;
+	text-transform:capitalize;
+	font-size:20px;
+	color:#111;
+	text-align:left;
+	border-bottom:0px solid #ddd;
+}
+
+.middle-bottom table tr td p{
+	display:inline-block;
+	text-align:left;
+}
+
+.footer{
+	background-color:#000;
+	border-top:0px solid #555555;
+	padding:20px;
+	padding-left:100px;
+}
+
+.footer fieldset{
+	float:left;
+	margin-right:40px;
+	color:#ccc;
+	font-size:14px;
+	padding:6px;
+}
+
+.footer fieldset h4{
+	color:#fff;
+}
+
+.footer fieldset a{
+	color:#fff;
+	display:inline-block;
+	padding:1px 7px;
+	border:0px solid #ccc;
+	margin-bottom:5px;
+	background-color:#9b59b6;
+	font-weight:bold;
+	width:100px;
+		-webkit-transition: background 250ms ease-out;
+	-moz-transition: background 250ms ease-out;
+	-o-transition: background 250ms ease-out;
+}
+
+.footer fieldset a:hover{
+	background-color:#fff;
+	color:#9b59b6;
+}
+
+.clear{
+	clear:both;
+}
